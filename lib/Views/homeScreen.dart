@@ -8,10 +8,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonController buttonController = Get.put(ButtonController());
 
-    final TextEditingController numberController = TextEditingController();
+    final ButtonController buttonController = Get.put(ButtonController()); // this will create an instance of ButtonController, and this dependency will be available throughout the app
 
+    final TextEditingController numberController = TextEditingController(); // Create a TextEditingController to manage the text field input
+
+    // Listen to changes in the text field and update the button state
+    // using the ButtonController
+    // This will enable the button if the input is valid
     numberController.addListener(() {
       buttonController.fun(numberController.text);
     });
