@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                 return ElevatedButton(
                   onPressed: buttonController.isButtonEnabled.value
                       ? () {
-                    NextScreen(numberController.text);
+                    NextScreen(numberController.text); // Navigate to the next screen with the input number
                   }
                       : null,
                   style: ElevatedButton.styleFrom(

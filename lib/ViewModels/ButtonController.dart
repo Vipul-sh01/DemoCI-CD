@@ -6,7 +6,8 @@ class ButtonController extends GetxController {
   Rx<bool> isButtonEnabled = Rx<bool>(false);
 
   void fun(String inputText) {
-    if (inputText.length == 10 && RegExp(r'^[0-9]+$').hasMatch(inputText)) {
+    if (inputText.length == 10 && RegExp(r'^[0-9]+$').hasMatch(inputText)) { // RegExp if method to check if the input is a valid number
+      // If the input is valid, change the button color and enable it
       buttonColor.value = Colors.blue;
       isButtonEnabled.value = true;
     } else {

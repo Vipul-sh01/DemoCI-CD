@@ -6,7 +6,8 @@ class DisplayScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String Number = Get.arguments;
+    final String Number = Get.arguments; // Retrieve the number passed from the previous screen
+    //Get.arguments is used to get the arguments passed to the route, in this case, the number input from the previous screen.
 
     return Scaffold(
       body: Center(
