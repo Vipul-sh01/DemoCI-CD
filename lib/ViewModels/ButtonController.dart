@@ -17,6 +17,8 @@ class ButtonController extends GetxController {
   }
 }
 
+
+
 // Function to navigate to the next screen with the provided number
 void NextScreen(String Number) {
   Get.toNamed('/displayScreen', arguments: Number);
